@@ -25,7 +25,7 @@ const handleCLickBtn = async () => {
       const c = [...voca].map((item) => item.innerText);
       const d = [...means].map((item) => item.innerText);
       const result = c.map((item, index) => {
-        return item + " : " + d[index] + "<br/>";
+        return item + "+" + d[index] + "_";
       });
       const kq = result.join("");
       const data = { kq, message: "get-user-data" };
